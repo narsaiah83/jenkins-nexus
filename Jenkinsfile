@@ -13,9 +13,8 @@ pipeline {
     stages {
         stage("Clone code from GitHub") {
             steps {
-                script {
                     git 'https://github.com/narsaiah83/jenkins-nexus.git'
-                }
+                
             }
         }
         stage("Maven Build") {
